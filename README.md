@@ -51,7 +51,7 @@ Shared personal skills live as real folders in `skills/`. Public OpenClaw shared
 ```text
 skills/autoreview -> ../../agent-skills/skills/autoreview
 skills/discrawl -> ../../discrawl/.agents/skills/discrawl
-skills/peekaboo/SKILL.md -> ../../../peekaboo/skills/peekaboo/SKILL.md
+skills/peekaboo -> ../../peekaboo/skills/peekaboo
 ```
 
 Current symlinked repo-owned skills include `birdclaw`, `discrawl`, `gog`, `imsg`, `peekaboo`, `slacrawl`, `wacli`, and `wacrawl`.
