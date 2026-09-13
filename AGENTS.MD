@@ -41,6 +41,7 @@
 - Codex worker model, reasoning, and service tier follow the current `$codex-first` launch recipe unless the user requests an override. Use `$codex-huge-context` for direct API context preflight and `$autoreview` for isolated reviews; preserve its reviewer isolation.
 - Claude Code parallel/background work (Codex workers, monitors, long jobs): each = own harness-tracked task (`run_in_background: true`), labeled for target, one sidebar chip each. Never `&`-detach durable work — hides it, only agent sees. Quick foreground cmds inline. Other harnesses: ignore.
 - Screenshot/live-UI bug: `$browser-use`.
+- Computer use: when the primary computer-use tool is unavailable or cannot handle an authorized macOS task, fall back to `$peekaboo`. Follow its skill, use current matching signed CLI/app versions, and verify the actual screen result.
 - Peter's Chrome: NEVER open raw CDP/WebSocket connections (no `ws://127.0.0.1:9222` probes, no ad-hoc puppeteer/CDP clients). Chrome 144+ prompts "Allow remote debugging?" per connection and each one alerts Peter. Use mcporter's daemon-backed `chrome-devtools` (one shared relay connection) or Peekaboo; when a tool such as Oracle must attach itself, run the auto-approve watcher so no human click is needed. Budget: ONE attach per task — drive every browser proof through a single long-lived connection (never one attach per command/proof); each extra attach is an alert on Peter’s screen.
 - Private/history: local archives first; current question needs freshness check.
 - Secrets/API keys/live creds: `$one-password`.
