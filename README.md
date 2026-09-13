@@ -51,9 +51,12 @@ Shared personal skills live as real folders in `skills/`. Public OpenClaw shared
 ```text
 skills/autoreview -> ../../agent-skills/skills/autoreview
 skills/discrawl -> ../../discrawl/.agents/skills/discrawl
+skills/peekaboo/SKILL.md -> ../../../peekaboo/skills/peekaboo/SKILL.md
 ```
 
-Current symlinked repo-owned skills include `birdclaw`, `discrawl`, `gog`, `imsg`, `slacrawl`, `wacli`, and `wacrawl`.
+Current symlinked repo-owned skills include `birdclaw`, `discrawl`, `gog`, `imsg`, `peekaboo`, `slacrawl`, `wacli`, and `wacrawl`.
+
+Keep `~/Projects/peekaboo` cloned and current before syncing the Peekaboo skill. Its `skills/peekaboo/SKILL.md` owns command, permission, capture, and interaction guidance; edit that source instead of adding another copy here. After updating both repositories, run `scripts/sync-skills` and verify the Peekaboo skill resolves through the Codex and Claude mirrors.
 
 ## Agent Instructions
 

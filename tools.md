@@ -57,24 +57,7 @@ sonos open --name "Room" spotify:track:<id>
 ## peekaboo 👀
 Screenshot, screen inspection, and click automation.
 
-**Location**: `peekaboo` on PATH (Homebrew); repo `~/Projects/Peekaboo`
-
-**Commands**:
-```bash
-peekaboo see --no-elements             # Capture pixels without UI detection
-peekaboo see --tree --no-screenshot    # Inspect Accessibility without capture
-peekaboo click --on ELEMENT_ID --snapshot SNAPSHOT_ID # Act on a fresh observed element
-peekaboo press Return --app TextEdit --window-id 1234 # Send to an exact window
-peekaboo app list                      # List applications
-peekaboo window list --app Safari      # List one application's windows
-peekaboo screen list                   # List displays
-peekaboo tools                         # Show available MCP tools
-peekaboo permissions status            # Check TCC permissions
-```
-
-**Requirements**: Screen Recording + Accessibility permissions.
-
-**Docs**: `~/Projects/Peekaboo/docs/commands/`
+Use the [Peekaboo skill](skills/peekaboo/SKILL.md), owned by `~/Projects/peekaboo/skills/peekaboo`. It covers binary selection, host permissions, command syntax, and verified background interaction.
 
 ---
 
